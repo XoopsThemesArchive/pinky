@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+//
+function makeArray(n)
+{
+this.lenght=n;
+for(i=0;i<n;i++)this[i]="";
+}
+mes = new makeArray(24);
+mes[0]="AM0:00¤ò²á¤®¤Þ¤·¤¿¤¡¢ö¿·¤·¤¤Æü¤Ë¥³¥ó¥Ë¥Á¥ï¡ª";
+mes[1]="AM1:00¤ò²á¤®¤Þ¤·¤¿¤¡¢öÌÀÆü¤Ï¤Á¤ã¤ó¤Èµ¯¤­¤é¤ì¤ë¡©";
+mes[2]="AM2:00¤ò²á¤®¤Þ¤·¤¿¤¡¢ö¥½¥í¥½¥í¥ª¥Ð¥±¤¬½Ð¤ë»þ´Ö¡£";
+mes[3]="AM3:00¤ò²á¤®¤Þ¤·¤¿¤¡¢ö¤Þ¤À¿²¤Ê¤¤¤Î¤«¤·¤é¡©Âç¾æÉ×¡©";
+mes[4]="AM4:00¤ò²á¤®¤Þ¤·¤¿¤¡¢ö¤â¤¦Ä«´©¤ÏÆÏ¤¤¤¿¥«¥·¥é¡©¡©¡©";
+mes[5]="AM5:00¤ò²á¤®¤Þ¤·¤¿¤¡¢ö¤ªÆüÍÍ¤¬´é¤ò½Ð¤¹º¢¤«¤·¤é¡©";
+mes[6]="AM6:00¤ò²á¤®¤Þ¤·¤¿¤¡¢öÁáµ¯¤­¥Ç¥¹¥Í¢ö¥ª¥Ï¥è¥¦¤µ¤ó¢ö";
+mes[7]="AM7:00¤ò²á¤®¤Þ¤·¤¿¤¡¢ö¤ª¤Ã¤Ï¤è¡Á¤¦¡£¤¤¤¤Ä«·Þ¤¨¤¿¡ª¡©";
+mes[8]="AM8:00¤ò²á¤®¤Þ¤·¤¿¤¡¢öº£Æü°ìÆü¤Î¤´Í½Äê¤Ï¤¡¡Á¡©";
+mes[9]="AM9:00¤ò²á¤®¤Þ¤·¤¿¤¡¢öº£Æü¤â³Ú¤·¤¯²á¤´¤·¤Þ¤·¤ç¤¦¡ª";
+mes[10]="AM10:00¤ò²á¤®¤Þ¤·¤¿¢ö¤µ¤Æ¤µ¤Æ¡¢º£Æü¤Ï²¿¤·¤Þ¤·¤ç¤¦¡©";
+mes[11]="AM11:00¤ò²á¤®¤Þ¤·¤¿¢ö¤Á¤ç¤Ã¤È¤Î¤ó¤Ó¤ê¡¢Â©È´¤­¤·¤Þ¤·¤ç¡£";
+mes[12]="PM12:00¤ò²á¤®¤Þ¤·¤¿¢ö¤ªÃë¥´¥Ï¥ó¤Î»þ´Ö¥Ç¡Á¥¹¡£";
+mes[13]="PM13:00¤ò²á¤®¤Þ¤·¤¿¢ö¥È¥í¥È¥í¤Í¤à¡Á¤¯¤Ê¤Ã¤Á¤ã¤ï¤Ê¤¤¡©";
+mes[14]="PM14:00¤ò²á¤®¤Þ¤·¤¿¢ö¥ï¥¤¥É¥·¥ç¡¼¤Á¤§¡Á¤Ã¤¯¡ª¡Ê¾Ð";
+mes[15]="PM15:00¤ò²á¤®¤Þ¤·¤¿¢öº£Æü¤Î¥ª¥ä¥Ä¤Ï²¿¥«¥·¥é¡©";
+mes[16]="PM16:00¤ò²á¤®¤Þ¤·¤¿¢ö¥ì¥¿¥¹¤È¥­¥ã¥Ù¥Ä¤Î¶èÊÌ¤Ä¤¯¡©¡ÊÆæ";
+mes[17]="PM17:00¤ò²á¤®¤Þ¤·¤¿¢ö¤ª»ÒÍÍ¤Ï¤ª¤¦¤Á¤Ëµ¢¤ê¤Þ¤·¤ç¤¦¡ª";
+mes[18]="PM18:00¤ò²á¤®¤Þ¤·¤¿¢ö¤ªÈè¤ìÍÍ¤Ç¤¹¡£¤³¤ó¤Ð¤ó¤ï¢ö";
+mes[19]="PM19:00¤ò²á¤®¤Þ¤·¤¿¢öÌë¤´ÈÓ¤Ï²¿¤«¤·¤é¡©";
+mes[20]="PM20:00¤ò²á¤®¤Þ¤·¤¿¢ö¤ªÍ¼ÈÓ¤Ï¿©¤Ù¤¿¤«¤Ê¡©¡©";
+mes[21]="PM21:00¤ò²á¤®¤Þ¤·¤¿¢öPetitoops¤ÇÍ·¤Ó¤Þ¤·¤ç¢ö";
+mes[22]="PM22:00¤ò²á¤®¤Þ¤·¤¿¢ö¤ª¤â¤·¤í¤¤¥É¥é¥Þ¤Ï¤¢¤ë¤«¤·¤é¡Á¡©";
+mes[23]="PM23:00¤ò²á¤®¤Þ¤·¤¿¢öº£Æü¤â°ìÆü¤´¶ìÏ«ÍÍ¤¡¤¡¡ª";
+//
+function printMessage(){
+d=new Date();
+h=d.getHours();
+document.write(mes[h]);
+}
+// -->
+</SCRIPT>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="bg">
+<tr>
+<td>
+<table cellspacing="0" cellpadding="0">
+<tr><td colspan="3" height="12" background="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/line.gif"></td><tr>
+<tr>
+<td height="70" width="39" background="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/left.gif"></td>
+<td align="center"><br />
+<img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/maru.gif">&nbsp;<b><u><SCRIPT LANGUAGE="JavaScript">
+<!--
+printMessage();
+// -->
+</SCRIPT></u></b>&nbsp;<img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/maru.gif"><br /><br />
++ PetitOOps +
+</td>
+<td height="70" width="39" background="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/right.gif"></td></tr>
+<tr><td colspan="3" height="12" background="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/line.gif"></td><tr>
+</table>
+</td></tr>
+<tr><td>
+<table cellspacing="2" cellpadding="2"><tr>
+<td width="20%">
+<!-- Start left blocks loop -->
+<{foreach item=block from=$xoops_lblocks}>
+<table class="outline"><tr><td>
+<table cellspacing="0" cellpadding="2">
+<tr><td class="blockTitle">&nbsp;<img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/maru.gif">&nbsp;<{$block.title}></td></tr>
+<tr><td class="blockContent"><{$block.content}></td></tr></table>
+</td></tr></table><br />
+<{/foreach}>
+<!-- Fim do "loop" dos blocos da esquerda -->
+</td>
+<td style="padding: 0px 5px 0px;">
+<!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}>
+<table cellspacing="0">
+<tr><td width="100%" colspan="2">
+<!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}>
+<table class="outline"><tr><td>
+<table cellspacing="1" cellpadding="5">
+<tr><td class="blockTitle">&nbsp;<img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/maru.gif">&nbsp;<{$block.title}></td></tr>
+<tr><td class="blockContent"><{$block.content}></td></tr></table>
+</td></tr></table><br />
+<{/foreach}>
+<!-- End center-center blocks loop -->
+</td></tr>
+<tr><td width="50%">
+<!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}>
+<table class="outline"><tr><td>
+<table cellspacing="1" cellpadding="5">
+<tr> <td class="blockTitle">&nbsp;<img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/maru.gif">&nbsp;<{$block.title}></td></tr>
+<tr><td class="blockContent"><{$block.content}></td></tr></table>
+</td></tr></table><br />
+<{/foreach}>
+<!-- End center-left blocks loop -->
+</td><td width="50%">
+<!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}>
+<table class="outline"><tr><td>
+<table cellspacing="1" cellpadding="5">
+<tr>
+<td class="blockTitle">&nbsp;<img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/maru.gif">&nbsp;<{$block.title}>
+</td></tr>
+<tr><td class="blockContent"><{$block.content}></td></tr></table>
+</td></tr></table><br />
+<{/foreach}>
+<!-- End center-right blocks loop -->
+</td></tr></table>
+<{/if}>
+<!-- End display center blocks -->
+<div id="content"><{$xoops_contents}></div></td>
+<{if $xoops_showrblock == 1}>
+<td width=20% align=center>
+<!-- Início dos blocos da direita -->
+<{foreach item=block from=$xoops_rblocks}>
+<table class="outline"><tr><td>
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="blockTitle">&nbsp;<img src="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/maru.gif">&nbsp;<{$block.title}></td></tr>
+<tr><td class="blockContent"><{$block.content}></td></tr></table>
+</td></tr></table>
+<br /><{/foreach}>
+<!-- End right blocks loop -->
+<{/if}></td></tr></table>
+</td></tr>
+<tr><td height="12" background="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/line.gif"></td><tr>
+<tr><td height="30" valign="middle"2 align="center" bgcolor="#fff0f5">
+<p style="text-align: cener; padding-top: 5px;"><{$xoops_banner}></p>
+<div style="text-align: center; padding-top: 2px; font-size: 10px"><{$xoops_footer}></div>
+<div>XOOPS2 theme by <a href="http://peekaboo.s8.xrea.com/">PetitOOps</a> ::</div><br />
+</td></tr>
+<tr><td height="12" background="<{$xoops_url}>/themes/<{$xoops_theme}>/imagens/line.gif"></td><tr>
+</table>
+</body>
+</HTML>
